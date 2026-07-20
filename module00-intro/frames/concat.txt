@@ -1,0 +1,13 @@
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module00-intro/frames/slide-1.png'
+duration 21.576
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module00-intro/frames/slide-2.png'
+duration 27.744
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module00-intro/frames/slide-3.png'
+duration 29.448
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module00-intro/frames/slide-4.png'
+duration 18.36
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module00-intro/frames/slide-5.png'
+duration 24.648
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module00-intro/frames/slide-6.png'
+duration 17.544
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module00-intro/frames/slide-6.png'

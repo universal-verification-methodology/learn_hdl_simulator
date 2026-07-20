@@ -1,29 +1,31 @@
 # Module 03 — Step & continue
 
-**Module id:** module03-hdl-sim-step-continue  
-**Lab:** hdl-sim-step-continue  
+**Module id:** module03-hdl-sim-step-continue
+**Lab:** hdl-sim-step-continue
 **Tracks:** A (public simulator) · B (browser lab)
 
 ## Slide 1 — Step & continue
 
-Welcome to this module of learn HDL simulator. Today we focus on **Step & continue**. Browser literacy labs teach the workflow; the public HDL Simulator is where you practice for real.
+Run is coarse. When something looks wrong, you need finer control: Step advances one conceptual time unit and pauses; Continue runs until a breakpoint, a system stop, or the end of a short window. Together with a halt, that triad is how you walk a bug without staring at a free-running clock.
 
-## Slide 2 — Why this matters
+## Slide 2 — Breakpoints and halt
 
-In chip bring-up and coursework, getting lost in the simulator UI costs hours. This module gives you one clear skill you can reuse in every later HDL session.
+A breakpoint pauses Continue when simulation time reaches a chosen tick. A system stop from the testbench is like a dynamic breakpoint—it halts the run so you can inspect. Practice all three moves: one Step, one Continue that hits a stop point, and recognizing that you are halted—not still running.
 
-## Slide 3 — Track B browser lab
+## Slide 3 — Browser lab
 
-Open the browser lab `hdl-sim-step-continue`: load the starter example, then walk a couple of challenges so the idea sticks.
+![Lab starter](assets/lab-starter.png)
 
-## Slide 4 — Track A public simulator
+In the browser lab, load the starter where Step and Continue-to-breakpoint are already practiced, then try idle at time zero with a breakpoint armed. Step once, then Continue until the breakpoint hits. Challenges lock in the difference between a single Step and a Continue that runs to a halt.
 
-In the public HDL Simulator, practice the same workflow once — link: https://universal-verification-methodology.github.io/systemverilog-simulator/
+## Slide 4 — Public simulator practice
 
-## Slide 5 — Pitfalls
+In the public IDE, set or use whatever stop or breakpoint style the tool offers, then Step through a few edges of a tiny counter. Continue until you hit a deliberate stop in the testbench or a breakpoint you set. Say whether you are paused after Step, continuing, or halted—and why.
 
-Do not treat the concept lab as a full simulator. Do not force clocks carelessly. Prefer poke for soft deposits and release forces when you are done. Always know which file is top.
+## Slide 5 — Pitfalls to watch
+
+Do not mash Run when you meant Step—you will overshoot the interesting edge. Do not forget that Continue without a stop condition can race to the end of the window. And do not confuse a halted session with a crashed compile; check Console if nothing advances.
 
 ## Slide 6 — Your turn
 
-Complete the checklist for at least one track — preferably both. When you finish, continue to the next module in docs/MODULES.md.
+Complete the checklist for at least one track—preferably both. Practice Step, Continue, and a halt once each. When you are ready, take the short quiz, then continue to poke, force, and release.

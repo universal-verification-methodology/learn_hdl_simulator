@@ -1,36 +1,64 @@
-# Module 01 outline — stub for module-slides
-# Replace notes when expanding transcript.md, then run transcript_to_outline.py
-title: "UI tour"
-kind: lab
-lab: hdl-sim-tour
-footer: "learn_hdl_simulator — hdl-sim-tour"
+title: UI tour
+footer: learn_hdl_simulator — hdl sim tour
 slides:
-  - type: title
-    title: "UI tour"
-    subtitle: "learn_hdl_simulator module 01"
-    notes: "Welcome. This module is UI tour."
-  - type: bullets
-    title: Core idea
-    bullets:
-      - One concept for this module
-      - Why it matters in the simulator IDE
-    notes: "Teach the core idea in spoken prose — expand in transcript.md."
-  - type: bullets
-    title: Track B browser lab
-    bullets:
-      - Open the matching hdl-sim lab if shipped
-      - Load starter · challenges
-    notes: "Show the browser literacy lab starter when available."
-  - type: bullets
-    title: Track A public IDE
-    bullets:
-      - Open the public HDL Simulator
-      - Practice the same workflow
-    notes: "Point at the live IDE practice surface."
-  - type: bullets
-    title: Your turn
-    bullets:
-      - Complete the checklist for at least one track
-      - Optional short quiz
-    notes: "Send learners to CHECKLIST.md, then the next module."
-duration_minutes: 6
+- type: title
+  title: UI tour
+  subtitle: Before you debug a DUT, you need a mental map of the IDE
+  notes: 'Before you debug a DUT, you need a mental map of the IDE. Five panes do
+    almost all the work: Files for sources and top selection, Hierarchy for the instance
+    tree, Signals for nets in a scope, Wave for the timeline, and Console for messages
+    and errors. This module orients you so you always know which pane answers which
+    question.'
+- type: bullets
+  title: The five panes
+  bullets:
+  - Files hold project sources, open, edit, and pick the top or testbench files for
+    the run
+  - Hierarchy is the elaborated instance tree
+  - Signals lists nets in that scope so you can add them to waves
+  - Wave is the timeline, cursors, zoom, and radix live there
+  - Console shows tool messages, display text, errors, and run or stop status
+  notes: Files hold project sources—open, edit, and pick the top or testbench files
+    for the run. Hierarchy is the elaborated instance tree—pick a scope like the top,
+    the DUT, or the testbench. Signals lists nets in that scope so you can add them
+    to waves. Wave is the timeline—cursors, zoom, and radix live there. Console shows
+    tool messages, display text, errors, and run or stop status.
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Lab starter
+  notes: In the browser tour lab, load the starter example and visit every pane until
+    the status reads oriented. Try a fresh tour and click panes yourself, or load
+    a mid-tour preset that has only Files and Hierarchy visited. Challenges quiz what
+    each pane is for—sources, instance tree, timeline, and messages.
+- type: bullets
+  title: Public simulator practice
+  bullets:
+  - In the public IDE, open a tiny project and deliberately click each pane once
+  - Say out loud what you would look for there
+  - That spoken map sticks better than skimming icons
+  notes: 'In the public IDE, open a tiny project and deliberately click each pane
+    once. Say out loud what you would look for there: which file is top, which instance
+    is the DUT, which signal to wave, and whether the console shows a clean compile.
+    That spoken map sticks better than skimming icons.'
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not hunt for values in Files when you need Hierarchy and Signals
+  - Do not treat the concept lab as a full simulator
+  - And do not skip Console when a run fails
+  notes: Do not hunt for values in Files when you need Hierarchy and Signals. Do not
+    treat the concept lab as a full simulator—it teaches orientation, not cycle-accurate
+    HDL. And do not skip Console when a run fails; many “wave mysteries” are compile
+    or elaboration messages you never read.
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, reach oriented by visiting all five panes
+  - In the public IDE, name each pane’s job in one sentence
+  - When you are ready, take the short quiz, then continue to Hello DUT
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    reach oriented by visiting all five panes. In the public IDE, name each pane’s
+    job in one sentence. When you are ready, take the short quiz, then continue to
+    Hello DUT.

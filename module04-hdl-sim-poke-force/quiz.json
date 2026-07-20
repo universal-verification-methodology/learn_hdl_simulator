@@ -1,0 +1,53 @@
+{
+  "module": "module04-hdl-sim-poke-force",
+  "title": "Poke / force / release",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Poke is best described as…",
+      "choices": [
+        "A soft live deposit for the next evaluation",
+        "A permanent override that never needs release",
+        "A compile flag for synthesis",
+        "A Hierarchy filter only"
+      ],
+      "answer": 0,
+      "explain": "Poke = soft deposit."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Force…",
+      "choices": [
+        "Hard-overrides a net until Release",
+        "Always clears itself after one delta",
+        "Only works on the Console pane",
+        "Deletes the selected signal from waves"
+      ],
+      "answer": 0,
+      "explain": "Force sticks until release."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Forcing the clock is…",
+      "choices": [
+        "A hazard—prefer not to; release immediately if you did",
+        "The recommended way to advance all sims",
+        "Required before every poke",
+        "Harmless in every tool forever"
+      ],
+      "answer": 0,
+      "explain": "Clock force is unsafe / easy to forget."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "After a debug force, you should release so normal drivers can resume.",
+      "answer": true,
+      "explain": "Leftover forces create false bugs."
+    }
+  ]
+}

@@ -1,36 +1,69 @@
-# Module 00 outline — stub for module-slides
-# Replace notes when expanding transcript.md, then run transcript_to_outline.py
-title: "Welcome to the browser simulator"
-kind: intro
-lab: null
-footer: "learn_hdl_simulator — intro"
+title: Welcome to the browser simulator
+footer: learn_hdl_simulator — intro
 slides:
-  - type: title
-    title: "Welcome to the browser simulator"
-    subtitle: "learn_hdl_simulator module 00"
-    notes: "Welcome. This module is Welcome to the browser simulator."
-  - type: bullets
-    title: Core idea
-    bullets:
-      - One concept for this module
-      - Why it matters in the simulator IDE
-    notes: "Teach the core idea in spoken prose — expand in transcript.md."
-  - type: bullets
-    title: Track B browser lab
-    bullets:
-      - Open the matching hdl-sim lab if shipped
-      - Load starter · challenges
-    notes: "Show the browser literacy lab starter when available."
-  - type: bullets
-    title: Track A public IDE
-    bullets:
-      - Open the public HDL Simulator
-      - Practice the same workflow
-    notes: "Point at the live IDE practice surface."
-  - type: bullets
-    title: Your turn
-    bullets:
-      - Complete the checklist for at least one track
-      - Optional short quiz
-    notes: "Send learners to CHECKLIST.md, then the next module."
-duration_minutes: 6
+- type: title
+  title: Welcome to the browser simulator
+  subtitle: Welcome to learn HDL simulator
+  notes: Welcome to learn HDL simulator. This short path teaches the workflow of a
+    browser-based HDL IDE—files, hierarchy, signals, waves, and the console—so you
+    stop getting lost every time you open a session. Browser literacy labs teach the
+    moves; the public HDL Simulator is where you practice for real.
+- type: bullets
+  title: What you’ll build toward
+  bullets:
+  - Across the course you’ll tour the five IDE panes, load a tiny DUT and use Run,
+    Stop
+  - Glance at style and synth hints
+  - Sibling courses cover Verilog language depth, Icarus
+  notes: Across the course you’ll tour the five IDE panes, load a tiny DUT and use
+    Run, Stop, and Reset, then Step and Continue with a breakpoint mindset. You’ll
+    poke and force safely, read full-sim waves with cursors, link multi-file projects,
+    compare against a golden at a cursor, and glance at style and synth hints. Sibling
+    courses cover Verilog language depth, Icarus, and Verilator—here the job is simulator
+    literacy.
+- type: bullets
+  title: Two tracks, one idea
+  bullets:
+  - Track A is the public HDL Simulator in a modern browser, Files, Hierarchy, Signals,
+    Wave
+  - Track B is the platform’s hdl-sim concept labs
+  - You may do either track, or both
+  - A good rhythm is browser lab first for the idea
+  notes: 'Track A is the public HDL Simulator in a modern browser—Files, Hierarchy,
+    Signals, Wave, and Console in a live session. Track B is the platform’s hdl-sim
+    concept labs: guided challenges for tour, hello DUT, step, poke, waves, multi-file,
+    and golden compare. You may do either track, or both. A good rhythm is browser
+    lab first for the idea, then five minutes in the public IDE to harden it.'
+- type: bullets
+  title: Set up Track A
+  bullets:
+  - Open the public HDL Simulator in a modern browser
+  - 'Optional: keep a tiny counter or testbench sketch ready from learn Verilog'
+  - From this course folder, open module READMEs and EXAMPLES prompts as you go
+  notes: 'Open the public HDL Simulator in a modern browser. Optional: keep a tiny
+    counter or testbench sketch ready from learn Verilog. From this course folder,
+    open module READMEs and EXAMPLES prompts as you go; the course self-check script
+    can grade checklist items when you want them.'
+- type: two_column
+  title: Set up Track B
+  left:
+  - From the monorepo
+  - All seven hdl-sim literacy labs ship, plus the style and synth bridge labs
+  - If you prefer, use the published tools site instead
+  - Confirm you can reach the index, the next module sends you into the UI tour lab
+  right: assets/tools-index.png
+  notes: From the monorepo, serve the platform folder with a simple local web server,
+    then open the tools index and jump to the HDL simulator section. All seven hdl-sim
+    literacy labs ship, plus the style and synth bridge labs. If you prefer, use the
+    published tools site instead. Either way, confirm you can reach the index—the
+    next module sends you into the UI tour lab.
+- type: bullets
+  title: How to move through modules
+  bullets:
+  - For each module
+  - Prefer Track B when you want graded challenges
+  - When you finish this intro checklist, continue to the UI tour
+  notes: For each module, read the README for the outcome, pick a track—or both—then
+    work the checklist. Prefer Track B when you want graded challenges; prefer Track
+    A when you want muscle memory in the real IDE. When you finish this intro checklist,
+    continue to the UI tour.

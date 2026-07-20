@@ -1,29 +1,31 @@
 # Module 04 — Poke / force / release
 
-**Module id:** module04-hdl-sim-poke-force  
-**Lab:** hdl-sim-poke-force  
+**Module id:** module04-hdl-sim-poke-force
+**Lab:** hdl-sim-poke-force
 **Tracks:** A (public simulator) · B (browser lab)
 
 ## Slide 1 — Poke / force / release
 
-Welcome to this module of learn HDL simulator. Today we focus on **Poke / force / release**. Browser literacy labs teach the workflow; the public HDL Simulator is where you practice for real.
+Sometimes you need to deposit a value while the sim is live. Poke is a soft deposit for the next evaluation. Force hard-overrides a net until you Release. Release clears the force so normal drivers resume. Used carefully, these tools save hours; used carelessly, they create mysteries that look like RTL bugs.
 
-## Slide 2 — Why this matters
+## Slide 2 — Soft poke vs sticky force
 
-In chip bring-up and coursework, getting lost in the simulator UI costs hours. This module gives you one clear skill you can reuse in every later HDL session.
+Prefer poke when you want a temporary live value. Prefer force only when you must hold a net against its drivers—and always release when you are done. Reset nets can be held for debug; data nets are the usual poke or force targets. Clocks are a special hazard: forcing a clock is unsafe and easy to forget.
 
-## Slide 3 — Track B browser lab
+## Slide 3 — Browser lab
 
-Open the browser lab `hdl-sim-poke-force`: load the starter example, then walk a couple of challenges so the idea sticks.
+![Lab starter](assets/lab-starter.png)
 
-## Slide 4 — Track A public simulator
+In the browser lab, load the starter that pokes and forces data then releases—status should read ready with no force left active. Try forcing the clock and watch the hazard status appear; release it immediately. Challenges require the poke, force, and release triad and a clean exit with no leftover forces.
 
-In the public HDL Simulator, practice the same workflow once — link: https://universal-verification-methodology.github.io/systemverilog-simulator/
+## Slide 4 — Public simulator practice
 
-## Slide 5 — Pitfalls
+In the public IDE, poke a data net once and observe the wave. Force the same net, run a little, then release and confirm drivers resume. Avoid forcing the clock. If the tool warns about active forces, treat that as a first-class debug clue—not noise.
 
-Do not treat the concept lab as a full simulator. Do not force clocks carelessly. Prefer poke for soft deposits and release forces when you are done. Always know which file is top.
+## Slide 5 — Pitfalls to watch
+
+Do not leave forces active and then “debug” wrong RTL. Do not force clocks to “make time move.” Do not confuse poke with force—poke does not stick the same way. And always know which signal you selected before you deposit a value.
 
 ## Slide 6 — Your turn
 
-Complete the checklist for at least one track — preferably both. When you finish, continue to the next module in docs/MODULES.md.
+Complete the checklist for at least one track—preferably both. Practice poke, force, and release, and leave the session with no active forces. When you are ready, take the short quiz, then continue to full-sim waves.

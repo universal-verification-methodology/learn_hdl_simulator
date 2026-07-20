@@ -17,9 +17,13 @@ Spend unstructured time in the live IDE — open a DUT, run, wave, and poke with
 
 > This module has **no** browser tool id — fidelity is the public simulator itself.
 
-## Media (module-slides ready)
+## Media
 
 | Artifact | Path |
 |----------|------|
-| Outline | [outline.yaml](outline.yaml) |
 | Transcript | [transcript.md](transcript.md) |
+| Outline | [outline.yaml](outline.yaml) |
+| Slides | [slides.pptx](slides.pptx) · [slides.pdf](slides.pdf) |
+| Video | [video.mp4](video.mp4) |
+| Quiz | [quiz.json](quiz.json) |
+

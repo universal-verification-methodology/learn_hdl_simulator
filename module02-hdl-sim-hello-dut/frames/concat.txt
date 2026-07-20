@@ -1,0 +1,13 @@
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module02-hdl-sim-hello-dut/frames/slide-1.png'
+duration 16.8
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module02-hdl-sim-hello-dut/frames/slide-2.png'
+duration 22.416
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module02-hdl-sim-hello-dut/frames/slide-3.png'
+duration 21.168
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module02-hdl-sim-hello-dut/frames/slide-4.png'
+duration 21.216
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module02-hdl-sim-hello-dut/frames/slide-5.png'
+duration 19.824
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module02-hdl-sim-hello-dut/frames/slide-6.png'
+duration 18.936
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module02-hdl-sim-hello-dut/frames/slide-6.png'

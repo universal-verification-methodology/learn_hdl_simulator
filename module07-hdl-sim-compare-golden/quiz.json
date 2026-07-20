@@ -1,0 +1,53 @@
+{
+  "module": "module07-hdl-sim-compare-golden",
+  "title": "Golden compare",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A golden compare checks…",
+      "choices": [
+        "Observed values against an expected reference at a known time",
+        "Only whether Files is empty",
+        "Only git commit messages",
+        "Only synthesis area reports"
+      ],
+      "answer": 0,
+      "explain": "Golden = expected vs observed."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Comparing at cursor one means…",
+      "choices": [
+        "Reading the signal value at the time marked by C1",
+        "Always forcing reset",
+        "Ignoring radix",
+        "Deleting the wave pane"
+      ],
+      "answer": 0,
+      "explain": "C1 marks the check time."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "A mismatch might mean…",
+      "choices": [
+        "Wrong time, wrong signal/radix, or a real DUT/TB issue",
+        "The Console must be closed",
+        "Hierarchy is optional forever",
+        "You must force the clock"
+      ],
+      "answer": 0,
+      "explain": "Mismatch is diagnostic information."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Golden compare is a simple self-check idea before heavier scoreboards.",
+      "answer": true,
+      "explain": "Literacy step toward stronger checking."
+    }
+  ]
+}

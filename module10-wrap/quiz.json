@@ -1,0 +1,53 @@
+{
+  "module": "module10-wrap",
+  "title": "Simulator path complete",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "After this course you should be able to…",
+      "choices": [
+        "Navigate panes, control time, wave, and poke/force safely in the IDE",
+        "Skip Console messages forever",
+        "Replace all offline simulators",
+        "Tape out without a testbench"
+      ],
+      "answer": 0,
+      "explain": "Core IDE literacy outcomes."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "A sensible next course for offline fidelity is…",
+      "choices": [
+        "learn_iverilog or learn_verilator",
+        "Only PCB silkscreen design",
+        "Only GitHub stars",
+        "Only forcing clocks in waves"
+      ],
+      "answer": 0,
+      "explain": "Offline sim courses follow this path."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "If you mostly did browser labs, a good wrap action is…",
+      "choices": [
+        "Recreate a tour + waves session in the public IDE",
+        "Delete the tools index",
+        "Ignore Hierarchy permanently",
+        "Force clk and leave it"
+      ],
+      "answer": 0,
+      "explain": "Transfer literacy into the live IDE."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Knowing which file is top and reading the Console are lasting simulator habits.",
+      "answer": true,
+      "explain": "Top + Console prevent many false debug paths."
+    }
+  ]
+}

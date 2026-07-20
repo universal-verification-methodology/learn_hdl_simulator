@@ -1,0 +1,53 @@
+{
+  "module": "module08-style-synth-bridge",
+  "title": "Style & synth hints",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "This bridge module’s job is to…",
+      "choices": [
+        "Connect IDE workflow to style and synthesizability awareness",
+        "Replace learn_verilog entirely",
+        "Teach UVM factory overrides",
+        "Teach PCB layout"
+      ],
+      "answer": 0,
+      "explain": "Short bridge, not a full RTL course."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "A sim pass with lint warnings means…",
+      "choices": [
+        "You should still read the warnings—sim ≠ synth readiness",
+        "Lint is always false and can be ignored forever",
+        "You must delete the DUT",
+        "Waves are illegal"
+      ],
+      "answer": 0,
+      "explain": "Simulation success does not erase lint."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Track B for this module points at…",
+      "choices": [
+        "The hdl-style and synth-lint browser labs",
+        "Only the UART VIP",
+        "Only Git rebase",
+        "Only place-and-route"
+      ],
+      "answer": 0,
+      "explain": "Bridge labs are hdl-style and synth-lint."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Forcing signals in the wave is not a fix for synthesizability problems.",
+      "answer": true,
+      "explain": "Forces hide issues; they do not make RTL synth-clean."
+    }
+  ]
+}

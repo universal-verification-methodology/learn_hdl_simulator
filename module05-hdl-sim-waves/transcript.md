@@ -1,29 +1,31 @@
 # Module 05 — Full-sim waves
 
-**Module id:** module05-hdl-sim-waves  
-**Lab:** hdl-sim-waves  
+**Module id:** module05-hdl-sim-waves
+**Lab:** hdl-sim-waves
 **Tracks:** A (public simulator) · B (browser lab)
 
 ## Slide 1 — Full-sim waves
 
-Welcome to this module of learn HDL simulator. Today we focus on **Full-sim waves**. Browser literacy labs teach the workflow; the public HDL Simulator is where you practice for real.
+Waves turn time into a picture. You add signals from a scope, run or step, then read values with cursors. Cursor one and cursor two let you measure intervals; radix changes how numbers appear—binary, hex, or unsigned. Full-sim waves means you are reading a real timeline, not a static sketch.
 
-## Slide 2 — Why this matters
+## Slide 2 — Add, cursor, radix
 
-In chip bring-up and coursework, getting lost in the simulator UI costs hours. This module gives you one clear skill you can reuse in every later HDL session.
+Pick a scope in Hierarchy, select signals, and add them to the wave pane. Place cursor one at an interesting edge; place cursor two to measure a delay or pulse width. Switch radix when hex is clearer than a long binary string. Zoom so the region you care about fills the view without losing context.
 
-## Slide 3 — Track B browser lab
+## Slide 3 — Browser lab
 
-Open the browser lab `hdl-sim-waves`: load the starter example, then walk a couple of challenges so the idea sticks.
+![Lab starter](assets/lab-starter.png)
 
-## Slide 4 — Track A public simulator
+In the browser waves lab, load the starter with signals already on the wave and cursors placed. Practice adding a signal, moving cursors, and changing radix until the challenges pass. Treat the verdict as a coach: it tells you whether the wave set and cursors match the ask.
 
-In the public HDL Simulator, practice the same workflow once — link: https://universal-verification-methodology.github.io/systemverilog-simulator/
+## Slide 4 — Public simulator practice
 
-## Slide 5 — Pitfalls
+In the public IDE, add clock, reset, and a data output to the wave. Run a short window, set two cursors around one interesting transition, and read the value at cursor one in hex. If a signal is missing, go back to Hierarchy and Signals—waves only show what you added.
 
-Do not treat the concept lab as a full simulator. Do not force clocks carelessly. Prefer poke for soft deposits and release forces when you are done. Always know which file is top.
+## Slide 5 — Pitfalls to watch
+
+Do not debug from Console alone when the bug is timing—open the wave. Do not forget which cursor is active when you read a value. Do not overload the pane with every net in the design; start with clock, reset, and the outputs you own. And remember concept labs animate literacy—the public IDE is where real TB time lives.
 
 ## Slide 6 — Your turn
 
-Complete the checklist for at least one track — preferably both. When you finish, continue to the next module in docs/MODULES.md.
+Complete the checklist for at least one track—preferably both. Add signals, place two cursors, and read one value with a sensible radix. When you are ready, take the short quiz, then continue to multi-file projects.

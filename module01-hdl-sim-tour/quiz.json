@@ -1,0 +1,53 @@
+{
+  "module": "module01-hdl-sim-tour",
+  "title": "UI tour",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "The Files pane is mainly for…",
+      "choices": [
+        "Project sources and picking top / TB files",
+        "Only zooming waveforms",
+        "Only forcing clocks",
+        "Only synthesis timing paths"
+      ],
+      "answer": 0,
+      "explain": "Files = sources and top selection."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Hierarchy shows…",
+      "choices": [
+        "The instance tree of the elaborated design",
+        "Only raw filesystem directories",
+        "Only golden hex dumps",
+        "Only lint rule catalogs"
+      ],
+      "answer": 0,
+      "explain": "Hierarchy is the instance tree."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "The Wave pane is where you…",
+      "choices": [
+        "Inspect the timeline of sampled values (cursors, zoom, radix)",
+        "Edit only Makefile variables",
+        "Replace the need for a Console",
+        "Pick the top file for compile"
+      ],
+      "answer": 0,
+      "explain": "Wave = timeline / cursors."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Console typically shows tool messages, $display output, errors, and run/stop status.",
+      "answer": true,
+      "explain": "Console is the message surface for the sim session."
+    }
+  ]
+}

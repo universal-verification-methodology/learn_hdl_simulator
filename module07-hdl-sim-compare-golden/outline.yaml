@@ -1,36 +1,61 @@
-# Module 07 outline — stub for module-slides
-# Replace notes when expanding transcript.md, then run transcript_to_outline.py
-title: "Golden compare"
-kind: lab
-lab: hdl-sim-compare-golden
-footer: "learn_hdl_simulator — hdl-sim-compare-golden"
+title: Golden compare
+footer: learn_hdl_simulator — hdl sim compare golden
 slides:
-  - type: title
-    title: "Golden compare"
-    subtitle: "learn_hdl_simulator module 07"
-    notes: "Welcome. This module is Golden compare."
-  - type: bullets
-    title: Core idea
-    bullets:
-      - One concept for this module
-      - Why it matters in the simulator IDE
-    notes: "Teach the core idea in spoken prose — expand in transcript.md."
-  - type: bullets
-    title: Track B browser lab
-    bullets:
-      - Open the matching hdl-sim lab if shipped
-      - Load starter · challenges
-    notes: "Show the browser literacy lab starter when available."
-  - type: bullets
-    title: Track A public IDE
-    bullets:
-      - Open the public HDL Simulator
-      - Practice the same workflow
-    notes: "Point at the live IDE practice surface."
-  - type: bullets
-    title: Your turn
-    bullets:
-      - Complete the checklist for at least one track
-      - Optional short quiz
-    notes: "Send learners to CHECKLIST.md, then the next module."
-duration_minutes: 6
+- type: title
+  title: Golden compare
+  subtitle: A golden is an expected value or trace you trust
+  notes: 'A golden is an expected value or trace you trust. Golden compare means reading
+    the design at a known time—often cursor one—and checking it against that expectation.
+    It is the simplest self-check before you build a full scoreboard: did q match
+    the hex you wrote down?'
+- type: bullets
+  title: Compare at a cursor
+  bullets:
+  - Pick the signal, place cursor one at the check time, read the value with a clear
+    radix
+  - A mismatch is not failure of the method, it is information
+  - Match means you earned a ready status for that check
+  notes: 'Pick the signal, place cursor one at the check time, read the value with
+    a clear radix, and compare to the golden. A mismatch is not failure of the method—it
+    is information: wrong time, wrong signal, wrong radix, or real DUT bug. Match
+    means you earned a ready status for that check.'
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Lab starter
+  notes: In the browser golden lab, load the starter that already compares at cursor
+    one. Change the cursor or the expected value and watch the compare fail, then
+    restore a passing check. Challenges train you to compare the right net at the
+    right time—not just to hit Run.
+- type: bullets
+  title: Public simulator practice
+  bullets:
+  - In the public IDE, run a tiny counter to a known time, place cursor one
+  - Then read the wave and compare
+  - Optional stretch
+  notes: 'In the public IDE, run a tiny counter to a known time, place cursor one,
+    and write down the expected q in hex before you look. Then read the wave and compare.
+    Optional stretch: change the testbench stimulus and update the golden deliberately
+    so you see a real mismatch.'
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not compare at the wrong cursor or before the edge you meant
+  - Do not mix binary expectations with hex displays
+  - Do not treat a concept-lab pass as proof of silicon
+  - And do not skip naming which signal was compared, orphaned goldens confuse future
+    you
+  notes: Do not compare at the wrong cursor or before the edge you meant. Do not mix
+    binary expectations with hex displays. Do not treat a concept-lab pass as proof
+    of silicon. And do not skip naming which signal was compared—orphaned goldens
+    confuse future you.
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - Perform one golden compare at cursor one on a tiny DUT
+  - When you are ready, take the short quiz, then continue to the style and synth
+    bridge
+  notes: Complete the checklist for at least one track—preferably both. Perform one
+    golden compare at cursor one on a tiny DUT. When you are ready, take the short
+    quiz, then continue to the style and synth bridge.

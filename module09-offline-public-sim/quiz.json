@@ -1,0 +1,53 @@
+{
+  "module": "module09-offline-public-sim",
+  "title": "Free practice in the public IDE",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Module 09’s practice surface is…",
+      "choices": [
+        "The public HDL Simulator itself (no graded hdl-sim lab id)",
+        "Only a paper quiz with no IDE",
+        "Only synth-lint forever",
+        "Only GitHub Actions"
+      ],
+      "answer": 0,
+      "explain": "Free practice = public IDE."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "A good free-practice loop includes…",
+      "choices": [
+        "Load a tiny DUT, control time, and read a wave or poke once",
+        "Only renaming folders",
+        "Only writing a UVM agent",
+        "Only forcing clocks permanently"
+      ],
+      "answer": 0,
+      "explain": "Fluency loop: load, control, observe."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "If you get lost in the public IDE…",
+      "choices": [
+        "Revisit the matching browser literacy lab, then return",
+        "Delete all sources immediately",
+        "Ignore the Console forever",
+        "Skip to tapeout"
+      ],
+      "answer": 0,
+      "explain": "Labs reinforce; IDE builds muscle memory."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Browser IDE practice does not replace offline iverilog / Verilator when you need that fidelity.",
+      "answer": true,
+      "explain": "Sibling courses cover offline simulators."
+    }
+  ]
+}

@@ -1,29 +1,31 @@
 # Module 02 — Hello DUT
 
-**Module id:** module02-hdl-sim-hello-dut  
-**Lab:** hdl-sim-hello-dut  
+**Module id:** module02-hdl-sim-hello-dut
+**Lab:** hdl-sim-hello-dut
 **Tracks:** A (public simulator) · B (browser lab)
 
 ## Slide 1 — Hello DUT
 
-Welcome to this module of learn HDL simulator. Today we focus on **Hello DUT**. Browser literacy labs teach the workflow; the public HDL Simulator is where you practice for real.
+Orientation is not enough—you need a tiny design under control. Hello DUT means load a small module, start time with Run, freeze with Stop, and return to a known state with Reset. Those three controls are the heartbeat of every later debug session.
 
-## Slide 2 — Why this matters
+## Slide 2 — Run, Stop, Reset
 
-In chip bring-up and coursework, getting lost in the simulator UI costs hours. This module gives you one clear skill you can reuse in every later HDL session.
+Run starts or resumes simulation time so the DUT updates each step. Stop freezes time so you can inspect state without advancing the model. Reset returns the DUT to its initial state and leaves the sim stopped. Load picks which tiny sketch sits in the sandbox—counter, toggle flip-flop, or a simple combo AND for literacy.
 
-## Slide 3 — Track B browser lab
+## Slide 3 — Browser lab
 
-Open the browser lab `hdl-sim-hello-dut`: load the starter example, then walk a couple of challenges so the idea sticks.
+![Lab starter](assets/lab-starter.png)
 
-## Slide 4 — Track A public simulator
+In the browser lab, load the starter counter and practice the full Run, Stop, Reset triad until status reads ready. Switch DUT sketches and watch how q behaves while running—count up, toggle, or hold a combo result. Challenges ask you to load a DUT and complete the control triad without leaving a run hanging forever.
 
-In the public HDL Simulator, practice the same workflow once — link: https://universal-verification-methodology.github.io/systemverilog-simulator/
+## Slide 4 — Public simulator practice
 
-## Slide 5 — Pitfalls
+In the public IDE, open or paste a tiny counter with a short testbench. Compile or elaborate, then hit Run, Stop, and Reset once each. Confirm Console stays clean and that Reset actually clears the output you care about. Keep the design tiny—this module is control literacy, not a full test plan.
 
-Do not treat the concept lab as a full simulator. Do not force clocks carelessly. Prefer poke for soft deposits and release forces when you are done. Always know which file is top.
+## Slide 5 — Pitfalls to watch
+
+Do not confuse Reset of the DUT with closing the browser tab. Do not leave Run forever when you meant to inspect a frozen state—Stop first. And remember: concept clocks in the literacy lab are not the same as a real testbench clock generator; the public IDE still needs a proper TB for meaningful time.
 
 ## Slide 6 — Your turn
 
-Complete the checklist for at least one track — preferably both. When you finish, continue to the next module in docs/MODULES.md.
+Complete the checklist for at least one track—preferably both. In the browser, finish Run, Stop, and Reset on a loaded DUT. In the public IDE, do the same triad on one tiny design. When you are ready, take the short quiz, then continue to Step and Continue.

@@ -25,13 +25,15 @@ After this module you can explain and practice the ideas taught by **`hdl-sim-he
 
 > Concept labs are literacy tools — they do not replace time in the public simulator IDE.
 
-## Media (module-slides ready)
+## Media
 
 | Artifact | Path |
 |----------|------|
-| Outline | [outline.yaml](outline.yaml) |
 | Transcript | [transcript.md](transcript.md) |
-| Slides / video | generate with **module-slides** |
+| Outline | [outline.yaml](outline.yaml) |
+| Slides | [slides.pptx](slides.pptx) · [slides.pdf](slides.pdf) |
+| Video | [video.mp4](video.mp4) |
+| Quiz | [quiz.json](quiz.json) |
 
 ## Files
 

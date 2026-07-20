@@ -21,6 +21,16 @@ If you mainly used the **public simulator**, revisit any `hdl-sim-*` lab for gra
 → **learn_iverilog** · **learn_verilator** · **learn_uart** / **learn_spi** / **learn_i2c**  
 Syllabus ladder: [../../syllabus.md](../../syllabus.md#suggested-learning-ladder)
 
+## Media
+
+| Artifact | Path |
+|----------|------|
+| Transcript | [transcript.md](transcript.md) |
+| Outline | [outline.yaml](outline.yaml) |
+| Slides | [slides.pptx](slides.pptx) · [slides.pdf](slides.pdf) |
+| Video | [video.mp4](video.mp4) |
+| Quiz | [quiz.json](quiz.json) |
+
 ## Checklist
 
 - [ ] I completed Track A and/or Track B for the modules I care about

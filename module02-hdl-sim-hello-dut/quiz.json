@@ -1,0 +1,53 @@
+{
+  "module": "module02-hdl-sim-hello-dut",
+  "title": "Hello DUT",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Run in the simulator mainly…",
+      "choices": [
+        "Starts or resumes simulation time so the DUT updates",
+        "Deletes all source files",
+        "Forces every net permanently",
+        "Exports a GDSII layout"
+      ],
+      "answer": 0,
+      "explain": "Run advances sim time."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Stop is for…",
+      "choices": [
+        "Freezing time to inspect state without advancing",
+        "Always clearing all waves forever",
+        "Choosing the top module only",
+        "Releasing all forces automatically"
+      ],
+      "answer": 0,
+      "explain": "Stop freezes time for inspection."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Reset typically…",
+      "choices": [
+        "Returns the DUT to an initial state and leaves sim stopped",
+        "Compiles the design for ASIC tapeout",
+        "Creates a new git branch",
+        "Enables forcing the clock safely forever"
+      ],
+      "answer": 0,
+      "explain": "Reset restores initial DUT state."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Hello DUT literacy is about loading a tiny design and practicing Run / Stop / Reset before deeper debug.",
+      "answer": true,
+      "explain": "Control triad before poke, step, and waves depth."
+    }
+  ]
+}

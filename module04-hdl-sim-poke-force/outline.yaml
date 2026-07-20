@@ -1,36 +1,59 @@
-# Module 04 outline — stub for module-slides
-# Replace notes when expanding transcript.md, then run transcript_to_outline.py
-title: "Poke / force / release"
-kind: lab
-lab: hdl-sim-poke-force
-footer: "learn_hdl_simulator — hdl-sim-poke-force"
+title: Poke / force / release
+footer: learn_hdl_simulator — hdl sim poke force
 slides:
-  - type: title
-    title: "Poke / force / release"
-    subtitle: "learn_hdl_simulator module 04"
-    notes: "Welcome. This module is Poke / force / release."
-  - type: bullets
-    title: Core idea
-    bullets:
-      - One concept for this module
-      - Why it matters in the simulator IDE
-    notes: "Teach the core idea in spoken prose — expand in transcript.md."
-  - type: bullets
-    title: Track B browser lab
-    bullets:
-      - Open the matching hdl-sim lab if shipped
-      - Load starter · challenges
-    notes: "Show the browser literacy lab starter when available."
-  - type: bullets
-    title: Track A public IDE
-    bullets:
-      - Open the public HDL Simulator
-      - Practice the same workflow
-    notes: "Point at the live IDE practice surface."
-  - type: bullets
-    title: Your turn
-    bullets:
-      - Complete the checklist for at least one track
-      - Optional short quiz
-    notes: "Send learners to CHECKLIST.md, then the next module."
-duration_minutes: 6
+- type: title
+  title: Poke / force / release
+  subtitle: Sometimes you need to deposit a value while the sim is live
+  notes: Sometimes you need to deposit a value while the sim is live. Poke is a soft
+    deposit for the next evaluation. Force hard-overrides a net until you Release.
+    Release clears the force so normal drivers resume. Used carefully, these tools
+    save hours; used carelessly, they create mysteries that look like RTL bugs.
+- type: bullets
+  title: Soft poke vs sticky force
+  bullets:
+  - Prefer poke when you want a temporary live value
+  - Prefer force only when you must hold a net against its drivers
+  - Reset nets can be held for debug; data nets are the usual poke or force targets
+  - 'Clocks are a special hazard: forcing a clock is unsafe and easy to forget'
+  notes: 'Prefer poke when you want a temporary live value. Prefer force only when
+    you must hold a net against its drivers—and always release when you are done.
+    Reset nets can be held for debug; data nets are the usual poke or force targets.
+    Clocks are a special hazard: forcing a clock is unsafe and easy to forget.'
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Lab starter
+  notes: In the browser lab, load the starter that pokes and forces data then releases—status
+    should read ready with no force left active. Try forcing the clock and watch the
+    hazard status appear; release it immediately. Challenges require the poke, force,
+    and release triad and a clean exit with no leftover forces.
+- type: bullets
+  title: Public simulator practice
+  bullets:
+  - In the public IDE, poke a data net once and observe the wave
+  - Force the same net, run a little, then release and confirm drivers resume
+  - Avoid forcing the clock
+  - If the tool warns about active forces, treat that as a first-class debug clue,
+    not noise
+  notes: In the public IDE, poke a data net once and observe the wave. Force the same
+    net, run a little, then release and confirm drivers resume. Avoid forcing the
+    clock. If the tool warns about active forces, treat that as a first-class debug
+    clue—not noise.
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not leave forces active and then “debug” wrong RTL
+  - Do not force clocks to “make time move.” Do not confuse poke with force
+  - And always know which signal you selected before you deposit a value
+  notes: Do not leave forces active and then “debug” wrong RTL. Do not force clocks
+    to “make time move.” Do not confuse poke with force—poke does not stick the same
+    way. And always know which signal you selected before you deposit a value.
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - Practice poke, force, and release, and leave the session with no active forces
+  - When you are ready, take the short quiz, then continue to full-sim waves
+  notes: Complete the checklist for at least one track—preferably both. Practice poke,
+    force, and release, and leave the session with no active forces. When you are
+    ready, take the short quiz, then continue to full-sim waves.

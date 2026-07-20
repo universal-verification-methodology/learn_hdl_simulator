@@ -1,0 +1,13 @@
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module05-hdl-sim-waves/frames/slide-1.png'
+duration 20.76
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module05-hdl-sim-waves/frames/slide-2.png'
+duration 19.992
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module05-hdl-sim-waves/frames/slide-3.png'
+duration 17.52
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module05-hdl-sim-waves/frames/slide-4.png'
+duration 18.648
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module05-hdl-sim-waves/frames/slide-5.png'
+duration 21.6
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module05-hdl-sim-waves/frames/slide-6.png'
+duration 15.264
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module05-hdl-sim-waves/frames/slide-6.png'

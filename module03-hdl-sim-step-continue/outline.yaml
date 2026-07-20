@@ -1,36 +1,59 @@
-# Module 03 outline — stub for module-slides
-# Replace notes when expanding transcript.md, then run transcript_to_outline.py
-title: "Step & continue"
-kind: lab
-lab: hdl-sim-step-continue
-footer: "learn_hdl_simulator — hdl-sim-step-continue"
+title: Step & continue
+footer: learn_hdl_simulator — hdl sim step continue
 slides:
-  - type: title
-    title: "Step & continue"
-    subtitle: "learn_hdl_simulator module 03"
-    notes: "Welcome. This module is Step & continue."
-  - type: bullets
-    title: Core idea
-    bullets:
-      - One concept for this module
-      - Why it matters in the simulator IDE
-    notes: "Teach the core idea in spoken prose — expand in transcript.md."
-  - type: bullets
-    title: Track B browser lab
-    bullets:
-      - Open the matching hdl-sim lab if shipped
-      - Load starter · challenges
-    notes: "Show the browser literacy lab starter when available."
-  - type: bullets
-    title: Track A public IDE
-    bullets:
-      - Open the public HDL Simulator
-      - Practice the same workflow
-    notes: "Point at the live IDE practice surface."
-  - type: bullets
-    title: Your turn
-    bullets:
-      - Complete the checklist for at least one track
-      - Optional short quiz
-    notes: "Send learners to CHECKLIST.md, then the next module."
-duration_minutes: 6
+- type: title
+  title: Step & continue
+  subtitle: Run is coarse
+  notes: 'Run is coarse. When something looks wrong, you need finer control: Step
+    advances one conceptual time unit and pauses; Continue runs until a breakpoint,
+    a system stop, or the end of a short window. Together with a halt, that triad
+    is how you walk a bug without staring at a free-running clock.'
+- type: bullets
+  title: Breakpoints and halt
+  bullets:
+  - A breakpoint pauses Continue when simulation time reaches a chosen tick
+  - A system stop from the testbench is like a dynamic breakpoint
+  - Practice all three moves
+  notes: 'A breakpoint pauses Continue when simulation time reaches a chosen tick.
+    A system stop from the testbench is like a dynamic breakpoint—it halts the run
+    so you can inspect. Practice all three moves: one Step, one Continue that hits
+    a stop point, and recognizing that you are halted—not still running.'
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Lab starter
+  notes: In the browser lab, load the starter where Step and Continue-to-breakpoint
+    are already practiced, then try idle at time zero with a breakpoint armed. Step
+    once, then Continue until the breakpoint hits. Challenges lock in the difference
+    between a single Step and a Continue that runs to a halt.
+- type: bullets
+  title: Public simulator practice
+  bullets:
+  - In the public IDE
+  - Continue until you hit a deliberate stop in the testbench or a breakpoint you
+    set
+  - Say whether you are paused after Step, continuing, or halted, and why
+  notes: In the public IDE, set or use whatever stop or breakpoint style the tool
+    offers, then Step through a few edges of a tiny counter. Continue until you hit
+    a deliberate stop in the testbench or a breakpoint you set. Say whether you are
+    paused after Step, continuing, or halted—and why.
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not mash Run when you meant Step, you will overshoot the interesting edge
+  - Do not forget that Continue without a stop condition can race to the end of the
+    window
+  - And do not confuse a halted session with a crashed compile
+  notes: Do not mash Run when you meant Step—you will overshoot the interesting edge.
+    Do not forget that Continue without a stop condition can race to the end of the
+    window. And do not confuse a halted session with a crashed compile; check Console
+    if nothing advances.
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - Practice Step, Continue, and a halt once each
+  - When you are ready, take the short quiz, then continue to poke, force, and release
+  notes: Complete the checklist for at least one track—preferably both. Practice Step,
+    Continue, and a halt once each. When you are ready, take the short quiz, then
+    continue to poke, force, and release.

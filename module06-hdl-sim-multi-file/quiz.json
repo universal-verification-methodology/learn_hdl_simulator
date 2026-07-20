@@ -1,0 +1,53 @@
+{
+  "module": "module06-hdl-sim-multi-file",
+  "title": "Multi-file project",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "In a multi-file sim session you must know…",
+      "choices": [
+        "Which sources are included and which module is top / TB",
+        "Only the wave radix",
+        "Only the git remote URL",
+        "Only the force list"
+      ],
+      "answer": 0,
+      "explain": "File set + top selection drive elaboration."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "A missing DUT or package file often shows up as…",
+      "choices": [
+        "Compile/elaboration errors or holes in Hierarchy",
+        "A faster clock automatically",
+        "A permanent poke on reset",
+        "A green golden compare with no run"
+      ],
+      "answer": 0,
+      "explain": "Console and Hierarchy reveal missing sources."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "The open editor tab…",
+      "choices": [
+        "Is not automatically the top module—you must set top intentionally",
+        "Always overrides Hierarchy forever",
+        "Disables the Console",
+        "Forces all clocks"
+      ],
+      "answer": 0,
+      "explain": "Top is an explicit project choice."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "A minimal multi-file practice set is often a DUT file plus a testbench file.",
+      "answer": true,
+      "explain": "DUT + TB is the classic two-file starter."
+    }
+  ]
+}

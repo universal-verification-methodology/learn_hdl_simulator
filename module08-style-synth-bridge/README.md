@@ -19,9 +19,13 @@ Open a small DUT in the [HDL Simulator](https://universal-verification-methodolo
 1. [`hdl-style`](http://127.0.0.1:8080/tools/hdl-style/index.html) · [live](https://universal-verification-methodology.github.io/learning/tools/hdl-style/)
 2. [`synth-lint`](http://127.0.0.1:8080/tools/synth-lint/index.html) · [live](https://universal-verification-methodology.github.io/learning/tools/synth-lint/)
 
-## Media (module-slides ready)
+## Media
 
 | Artifact | Path |
 |----------|------|
-| Outline | [outline.yaml](outline.yaml) |
 | Transcript | [transcript.md](transcript.md) |
+| Outline | [outline.yaml](outline.yaml) |
+| Slides | [slides.pptx](slides.pptx) · [slides.pdf](slides.pdf) |
+| Video | [video.mp4](video.mp4) |
+| Quiz | [quiz.json](quiz.json) |
+

@@ -1,36 +1,58 @@
-# Module 06 outline — stub for module-slides
-# Replace notes when expanding transcript.md, then run transcript_to_outline.py
-title: "Multi-file project"
-kind: lab
-lab: hdl-sim-multi-file
-footer: "learn_hdl_simulator — hdl-sim-multi-file"
+title: Multi-file project
+footer: learn_hdl_simulator — hdl sim multi file
 slides:
-  - type: title
-    title: "Multi-file project"
-    subtitle: "learn_hdl_simulator module 06"
-    notes: "Welcome. This module is Multi-file project."
-  - type: bullets
-    title: Core idea
-    bullets:
-      - One concept for this module
-      - Why it matters in the simulator IDE
-    notes: "Teach the core idea in spoken prose — expand in transcript.md."
-  - type: bullets
-    title: Track B browser lab
-    bullets:
-      - Open the matching hdl-sim lab if shipped
-      - Load starter · challenges
-    notes: "Show the browser literacy lab starter when available."
-  - type: bullets
-    title: Track A public IDE
-    bullets:
-      - Open the public HDL Simulator
-      - Practice the same workflow
-    notes: "Point at the live IDE practice surface."
-  - type: bullets
-    title: Your turn
-    bullets:
-      - Complete the checklist for at least one track
-      - Optional short quiz
-    notes: "Send learners to CHECKLIST.md, then the next module."
-duration_minutes: 6
+- type: title
+  title: Multi-file project
+  subtitle: Real designs are rarely one file
+  notes: Real designs are rarely one file. Multi-file literacy means knowing which
+    sources are in the project, which file is the top or testbench, and how include
+    or compile order affects elaboration. Get the file set wrong and you will debug
+    the wrong module for an hour.
+- type: bullets
+  title: Top, TB, and linkage
+  bullets:
+  - Name the DUT file and the testbench file explicitly
+  - Know which module is top for the run
+  - If the IDE links multiple files into one session
+  notes: Name the DUT file and the testbench file explicitly. Know which module is
+    top for the run. If the IDE links multiple files into one session, confirm every
+    needed source is present—missing a package or a sub-module shows up as hierarchy
+    holes or compile errors in the Console.
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Lab starter
+  notes: In the browser multi-file lab, load the starter project and inspect how files
+    are listed and which one is marked top. Try presets that drop a file or mis-mark
+    top, and watch status leave ready. Challenges ask you to restore a coherent multi-file
+    set before you “run.”
+- type: bullets
+  title: Public simulator practice
+  bullets:
+  - 'In the public IDE, open a tiny two-file sketch: DUT plus testbench'
+  - Confirm both appear under Files, set top correctly, and elaborate or run once
+  - Intentionally remove the testbench from the set
+  notes: 'In the public IDE, open a tiny two-file sketch: DUT plus testbench. Confirm
+    both appear under Files, set top correctly, and elaborate or run once. Intentionally
+    remove the testbench from the set, note the Console error, then restore it—that
+    muscle memory prevents silent wrong builds.'
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not assume the open editor tab is the top module
+  - Do not forget packages or included files that the DUT needs
+  - Do not mix two unrelated testbenches in one run and expect clean waves
+  - Always reconcile Files with Hierarchy after a change
+  notes: Do not assume the open editor tab is the top module. Do not forget packages
+    or included files that the DUT needs. Do not mix two unrelated testbenches in
+    one run and expect clean waves. Always reconcile Files with Hierarchy after a
+    change.
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - Build or restore a coherent DUT-plus-testbench file set and name the top
+  - When you are ready, take the short quiz, then continue to golden compare
+  notes: Complete the checklist for at least one track—preferably both. Build or restore
+    a coherent DUT-plus-testbench file set and name the top. When you are ready, take
+    the short quiz, then continue to golden compare.

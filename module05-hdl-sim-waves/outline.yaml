@@ -1,36 +1,62 @@
-# Module 05 outline — stub for module-slides
-# Replace notes when expanding transcript.md, then run transcript_to_outline.py
-title: "Full-sim waves"
-kind: lab
-lab: hdl-sim-waves
-footer: "learn_hdl_simulator — hdl-sim-waves"
+title: Full-sim waves
+footer: learn_hdl_simulator — hdl sim waves
 slides:
-  - type: title
-    title: "Full-sim waves"
-    subtitle: "learn_hdl_simulator module 05"
-    notes: "Welcome. This module is Full-sim waves."
-  - type: bullets
-    title: Core idea
-    bullets:
-      - One concept for this module
-      - Why it matters in the simulator IDE
-    notes: "Teach the core idea in spoken prose — expand in transcript.md."
-  - type: bullets
-    title: Track B browser lab
-    bullets:
-      - Open the matching hdl-sim lab if shipped
-      - Load starter · challenges
-    notes: "Show the browser literacy lab starter when available."
-  - type: bullets
-    title: Track A public IDE
-    bullets:
-      - Open the public HDL Simulator
-      - Practice the same workflow
-    notes: "Point at the live IDE practice surface."
-  - type: bullets
-    title: Your turn
-    bullets:
-      - Complete the checklist for at least one track
-      - Optional short quiz
-    notes: "Send learners to CHECKLIST.md, then the next module."
-duration_minutes: 6
+- type: title
+  title: Full-sim waves
+  subtitle: Waves turn time into a picture
+  notes: Waves turn time into a picture. You add signals from a scope, run or step,
+    then read values with cursors. Cursor one and cursor two let you measure intervals;
+    radix changes how numbers appear—binary, hex, or unsigned. Full-sim waves means
+    you are reading a real timeline, not a static sketch.
+- type: bullets
+  title: Add, cursor, radix
+  bullets:
+  - Pick a scope in Hierarchy, select signals, and add them to the wave pane
+  - Place cursor one at an interesting edge
+  - Switch radix when hex is clearer than a long binary string
+  - Zoom so the region you care about fills the view without losing context
+  notes: Pick a scope in Hierarchy, select signals, and add them to the wave pane.
+    Place cursor one at an interesting edge; place cursor two to measure a delay or
+    pulse width. Switch radix when hex is clearer than a long binary string. Zoom
+    so the region you care about fills the view without losing context.
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Lab starter
+  notes: 'In the browser waves lab, load the starter with signals already on the wave
+    and cursors placed. Practice adding a signal, moving cursors, and changing radix
+    until the challenges pass. Treat the verdict as a coach: it tells you whether
+    the wave set and cursors match the ask.'
+- type: bullets
+  title: Public simulator practice
+  bullets:
+  - In the public IDE, add clock, reset, and a data output to the wave
+  - Run a short window, set two cursors around one interesting transition
+  - If a signal is missing, go back to Hierarchy and Signals, waves only show what
+    you added
+  notes: In the public IDE, add clock, reset, and a data output to the wave. Run a
+    short window, set two cursors around one interesting transition, and read the
+    value at cursor one in hex. If a signal is missing, go back to Hierarchy and Signals—waves
+    only show what you added.
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not debug from Console alone when the bug is timing, open the wave
+  - Do not forget which cursor is active when you read a value
+  - Do not overload the pane with every net in the design
+  - And remember concept labs animate literacy, the public IDE is where real TB time
+    lives
+  notes: Do not debug from Console alone when the bug is timing—open the wave. Do
+    not forget which cursor is active when you read a value. Do not overload the pane
+    with every net in the design; start with clock, reset, and the outputs you own.
+    And remember concept labs animate literacy—the public IDE is where real TB time
+    lives.
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - Add signals, place two cursors, and read one value with a sensible radix
+  - When you are ready, take the short quiz, then continue to multi-file projects
+  notes: Complete the checklist for at least one track—preferably both. Add signals,
+    place two cursors, and read one value with a sensible radix. When you are ready,
+    take the short quiz, then continue to multi-file projects.

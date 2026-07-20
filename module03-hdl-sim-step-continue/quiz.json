@@ -1,0 +1,53 @@
+{
+  "module": "module03-hdl-sim-step-continue",
+  "title": "Step & continue",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Step mainly…",
+      "choices": [
+        "Advances one conceptual time unit, then pauses",
+        "Always forces the clock high",
+        "Deletes the wave window",
+        "Chooses the Files pane only"
+      ],
+      "answer": 0,
+      "explain": "Step = fine-grained advance + pause."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Continue typically runs until…",
+      "choices": [
+        "A breakpoint, a system stop, or the end of a short window",
+        "The chip is taped out",
+        "All forces are released automatically",
+        "Hierarchy is empty"
+      ],
+      "answer": 0,
+      "explain": "Continue runs to a stop condition."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "A breakpoint is meant to…",
+      "choices": [
+        "Pause Continue when simulation time reaches a chosen tick",
+        "Replace the need for any testbench",
+        "Force every data net permanently",
+        "Export PDF waves only"
+      ],
+      "answer": 0,
+      "explain": "Breakpoint pauses at a time or condition."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "A testbench system stop can halt a run much like hitting a breakpoint.",
+      "answer": true,
+      "explain": "System stop is a dynamic halt from the TB."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "module": "module05-hdl-sim-waves",
+  "title": "Full-sim waves",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Cursors on a wave pane mainly help you…",
+      "choices": [
+        "Mark times and measure intervals between interesting edges",
+        "Edit SystemVerilog packages",
+        "Force clocks safely forever",
+        "Replace Hierarchy entirely"
+      ],
+      "answer": 0,
+      "explain": "C1/C2 mark and measure time."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Radix on waves is for…",
+      "choices": [
+        "Choosing how values display (e.g. binary vs hex)",
+        "Choosing the top file name only",
+        "Deleting unused source files",
+        "Enabling synthesis"
+      ],
+      "answer": 0,
+      "explain": "Radix = display base / format."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "If a signal is missing from the wave, first…",
+      "choices": [
+        "Select the right scope and add it from Signals",
+        "Force the clock permanently",
+        "Delete the Console log",
+        "Ignore Hierarchy forever"
+      ],
+      "answer": 0,
+      "explain": "Waves show what you add from a scope."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "A useful starter wave set often includes clock, reset, and the outputs you care about.",
+      "answer": true,
+      "explain": "Start focused; add more nets as needed."
+    }
+  ]
+}

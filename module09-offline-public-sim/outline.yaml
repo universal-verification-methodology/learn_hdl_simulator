@@ -1,36 +1,63 @@
-# Module 09 outline — stub for module-slides
-# Replace notes when expanding transcript.md, then run transcript_to_outline.py
-title: "Open public simulator — free practice"
-kind: offline
-lab: null
-footer: "learn_hdl_simulator — offline-public-sim"
+title: Free practice in the public IDE
+footer: learn_hdl_simulator — offline public sim
 slides:
-  - type: title
-    title: "Open public simulator — free practice"
-    subtitle: "learn_hdl_simulator module 09"
-    notes: "Welcome. This module is Open public simulator — free practice."
-  - type: bullets
-    title: Core idea
-    bullets:
-      - One concept for this module
-      - Why it matters in the simulator IDE
-    notes: "Teach the core idea in spoken prose — expand in transcript.md."
-  - type: bullets
-    title: Track B browser lab
-    bullets:
-      - Open the matching hdl-sim lab if shipped
-      - Load starter · challenges
-    notes: "Show the browser literacy lab starter when available."
-  - type: bullets
-    title: Track A public IDE
-    bullets:
-      - Open the public HDL Simulator
-      - Practice the same workflow
-    notes: "Point at the live IDE practice surface."
-  - type: bullets
-    title: Your turn
-    bullets:
-      - Complete the checklist for at least one track
-      - Optional short quiz
-    notes: "Send learners to CHECKLIST.md, then the next module."
-duration_minutes: 6
+- type: title
+  title: Free practice in the public IDE
+  subtitle: No graded browser lab this time
+  notes: 'No graded browser lab this time. Open the public HDL Simulator and spend
+    unstructured time: load a tiny DUT, run, stop, reset, step, add waves, and optional
+    poke. The point is fluency without a challenge checklist steering every click.'
+- type: bullets
+  title: A simple practice loop
+  bullets:
+  - Paste or open a tiny counter plus testbench
+  - Compile or elaborate until Console is clean
+  - Run a short window, Stop, Reset once
+  - Step a few times
+  - Add clock and q to the wave, place a cursor, and optionally poke a data net then
+    release
+  - Stop when the loop feels boring, that is fluency
+  notes: Paste or open a tiny counter plus testbench. Compile or elaborate until Console
+    is clean. Run a short window, Stop, Reset once. Step a few times. Add clock and
+    q to the wave, place a cursor, and optionally poke a data net then release. Stop
+    when the loop feels boring—that is fluency.
+- type: bullets
+  title: What success looks like
+  bullets:
+  - Success is not a score
+  - 'Success is: you can open the IDE without hunting for panes, you can control time'
+  - If you get stuck, revisit the matching hdl-sim literacy lab, then return to the
+    public IDE
+  notes: 'Success is not a score. Success is: you can open the IDE without hunting
+    for panes, you can control time, and you can read one value from the wave with
+    confidence. If you get stuck, revisit the matching hdl-sim literacy lab, then
+    return to the public IDE.'
+- type: bullets
+  title: Optional depth
+  bullets:
+  - 'Stretch: mis-set top on purpose, read the Console error, fix it'
+  - Or force a net, watch the hazard, release it
+  - Or compare q at cursor one to a handwritten golden
+  - Keep the design tiny so the IDE skills stay the focus
+  notes: 'Stretch: mis-set top on purpose, read the Console error, fix it. Or force
+    a net, watch the hazard, release it. Or compare q at cursor one to a handwritten
+    golden. Keep the design tiny so the IDE skills stay the focus.'
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not turn free practice into a day-long RTL rewrite
+  - Do not skip Console when something fails
+  - Do not leave forces active
+  - And do not confuse this browser IDE with offline Icarus or Verilator fidelity
+  notes: Do not turn free practice into a day-long RTL rewrite. Do not skip Console
+    when something fails. Do not leave forces active. And do not confuse this browser
+    IDE with offline Icarus or Verilator fidelity—those paths come next when you need
+    them.
+- type: bullets
+  title: Your turn
+  bullets:
+  - Open the public simulator, run at least one tiny DUT through Run, Stop
+  - Check off the module checklist
+  notes: Open the public simulator, run at least one tiny DUT through Run, Stop, and
+    Reset, and either add a wave signal or poke once. Check off the module checklist,
+    take the short quiz if you want a pulse check, then continue to the wrap.

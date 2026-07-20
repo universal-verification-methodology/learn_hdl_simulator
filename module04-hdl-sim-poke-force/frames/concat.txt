@@ -1,0 +1,13 @@
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module04-hdl-sim-poke-force/frames/slide-1.png'
+duration 21.552
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module04-hdl-sim-poke-force/frames/slide-2.png'
+duration 20.424
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module04-hdl-sim-poke-force/frames/slide-3.png'
+duration 19.944
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module04-hdl-sim-poke-force/frames/slide-4.png'
+duration 18.48
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module04-hdl-sim-poke-force/frames/slide-5.png'
+duration 15.72
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module04-hdl-sim-poke-force/frames/slide-6.png'
+duration 15.12
+file '/mnt/d/proj/designs/learning/courses/learn_hdl_simulator/module04-hdl-sim-poke-force/frames/slide-6.png'

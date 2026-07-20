@@ -1,0 +1,53 @@
+{
+  "module": "module00-intro",
+  "title": "Welcome to the browser simulator",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "In this course, browser hdl-sim labs primarily…",
+      "choices": [
+        "Teach IDE workflow literacy before free practice in the public simulator",
+        "Replace Icarus and Verilator forever",
+        "Teach place-and-route only",
+        "Replace the need for any DUT or testbench"
+      ],
+      "answer": 0,
+      "explain": "Labs teach moves; the public IDE is the practice surface."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Track A means practice in…",
+      "choices": [
+        "The public HDL Simulator IDE",
+        "Only paper worksheets with no simulator",
+        "Git branching only",
+        "UVM scoreboards only"
+      ],
+      "answer": 0,
+      "explain": "Track A is the live public simulator session."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "A typical IDE session includes which pane set?",
+      "choices": [
+        "Files, Hierarchy, Signals, Wave, and Console",
+        "Only a schematic editor",
+        "Only synthesis reports",
+        "Only a git diff view"
+      ],
+      "answer": 0,
+      "explain": "Those five panes are the tour map for this course."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Deep language and offline-sim fidelity belong mainly in sibling courses like learn_verilog, learn_iverilog, and learn_verilator.",
+      "answer": true,
+      "explain": "This path focuses on browser simulator literacy."
+    }
+  ]
+}
