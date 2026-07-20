@@ -1,0 +1,36 @@
+# Module 01 outline — stub for module-slides
+# Replace notes when expanding transcript.md, then run transcript_to_outline.py
+title: "UI tour"
+kind: lab
+lab: hdl-sim-tour
+footer: "learn_hdl_simulator — hdl-sim-tour"
+slides:
+  - type: title
+    title: "UI tour"
+    subtitle: "learn_hdl_simulator module 01"
+    notes: "Welcome. This module is UI tour."
+  - type: bullets
+    title: Core idea
+    bullets:
+      - One concept for this module
+      - Why it matters in the simulator IDE
+    notes: "Teach the core idea in spoken prose — expand in transcript.md."
+  - type: bullets
+    title: Track B browser lab
+    bullets:
+      - Open the matching hdl-sim lab if shipped
+      - Load starter · challenges
+    notes: "Show the browser literacy lab starter when available."
+  - type: bullets
+    title: Track A public IDE
+    bullets:
+      - Open the public HDL Simulator
+      - Practice the same workflow
+    notes: "Point at the live IDE practice surface."
+  - type: bullets
+    title: Your turn
+    bullets:
+      - Complete the checklist for at least one track
+      - Optional short quiz
+    notes: "Send learners to CHECKLIST.md, then the next module."
+duration_minutes: 6

@@ -1,0 +1,13 @@
+# Module 06 examples — Multi-file project
+
+Track A (public HDL Simulator). Track B is the matching `hdl-sim-*` lab.
+
+## Prompts
+
+1. Restate the core idea of **Multi-file project** in one sentence.
+2. In the [public simulator](https://universal-verification-methodology.github.io/systemverilog-simulator/), practice the same workflow once.
+3. Optional: use a tiny counter DUT from **learn_verilog** notes.
+
+## Stretch
+
+Redo the browser lab challenges after the IDE practice.
